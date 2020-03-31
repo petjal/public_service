@@ -39,3 +39,4 @@ jobs:
         hostname -f
         pwd
         whoami
+        find | xargs ls -alrtFh 
