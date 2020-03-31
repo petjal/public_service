@@ -1,6 +1,6 @@
-. ./config.properties
-echo "${mState}"
-echo "${mCounty}"
+source ./config.properties
+#echo "${mState}"
+#echo "${mCounty}"
 #mStates="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")"
 #echo "${mStates}"
 #mState="$(echo "${mStates}" | grep Massachusetts)"
