@@ -40,3 +40,4 @@ jobs:
         pwd
         whoami
         find | xargs ls -alrtFh 
+        env | grep -i workspace
