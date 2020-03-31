@@ -43,3 +43,5 @@ jobs:
         env | grep -i workspace
         source ./src/config.properties
         echo "${mState}"
+        echo "${mCounty}"
+        source ./src/GetData.bash
