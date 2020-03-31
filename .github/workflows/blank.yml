@@ -39,5 +39,7 @@ jobs:
         hostname -f
         pwd
         whoami
-        find | xargs ls -alrtFh 
+        #find | xargs ls -alrtFh 
         env | grep -i workspace
+        source ./src/config.properties
+        echo "${mState}"
