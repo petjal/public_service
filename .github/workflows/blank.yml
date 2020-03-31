@@ -33,4 +33,9 @@ jobs:
         echo test, and deploy your project.
 
     - name: GetData
-      run: . ~/GetData.bash
+      #run: . ~/GetData.bash
+      run: |
+        date
+        hostname -f
+        pwd
+        whoami
