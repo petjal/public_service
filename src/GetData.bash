@@ -1,10 +1,10 @@
-source ./config.properties
+#source ./config.properties
 #echo "${mState}"
 #echo "${mCounty}"
-#mStates="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")"
+mStates="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")"
 #echo "${mStates}"
-#mState="$(echo "${mStates}" | grep Massachusetts)"
-#echo "${mState}"
+mStateData="$(echo "${mStates}" | grep Massachusetts)"
+echo "${mStateData}"
 #
 #mCounties="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv")"
 #mCounty="$(echo "${mCounties}" | grep Essex | grep Massachusetts)"
