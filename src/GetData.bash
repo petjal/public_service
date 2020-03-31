@@ -21,3 +21,4 @@ echo "${mCountyData}"
 #calc daily new (4 columns),
 #output 9 columns to csv.
 #ToDo: try to push into predesigned graphing/charting tool, maybe Google Sheets?"
+echo # for git Actions output drops last line?
