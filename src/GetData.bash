@@ -8,12 +8,12 @@ mStates="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/mast
 #echo "${mStates}"
 mStateData="$(echo "${mStates}" | grep "${mState}")"
 echo
-echo "${mStateData}" > ./out/output_$(date --utc +%Y%m%d_%H%M%SZ).out
+echo "${mStateData}"
 #
 mCounties="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv")"
 mCountyData="$(echo "${mCounties}" | grep "${mCounty}" | grep "${mState}")"
 echo
-echo "${mCountyData}" >> ./out/output_$(date --utc +%Y%m%d_%H%M%SZ).out
+echo "${mCountyData}"
 #echo
 #echo "TODO: create config file (like, to choose State, County), then read input from that."
 #echo "TODO: move this complexity to a bash script file, and then just call that as a single line script."
