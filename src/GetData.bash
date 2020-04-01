@@ -1,6 +1,7 @@
 #source ./config.properties
 #echo "${mState}"
 #echo "${mCounty}"
+date ; date --utc ; hostname -f ; pwd ; whoami
 env
 mStates="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")"
 #echo "${mStates}"
