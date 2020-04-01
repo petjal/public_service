@@ -44,4 +44,5 @@ jobs:
         source ./src/config.properties
         echo "${mState}"
         echo "${mCounty}"
-        source ./src/GetData.bash >> ./out/output_$(date --utc +%Y%m%d_%H%M%S.%NZ).out
+        echo
+        source ./src/GetData.bash
