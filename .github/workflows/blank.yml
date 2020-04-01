@@ -45,4 +45,4 @@ jobs:
         echo "${mState}"
         echo "${mCounty}"
         echo
-        source ./src/GetData.bash
+        source ./src/GetData.bash > ./out/output_$(date --utc +%Y%m%d_%H%M%SZ).out
