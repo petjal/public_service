@@ -3,6 +3,7 @@
 #echo "${mCounty}"
 date ; date --utc ; hostname -f ; pwd ; whoami
 env
+find -type d
 mStates="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")"
 #echo "${mStates}"
 mStateData="$(echo "${mStates}" | grep "${mState}")"
