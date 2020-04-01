@@ -2,7 +2,7 @@
 #echo "${mState}"
 #echo "${mCounty}"
 date ; date --utc ; hostname -f ; pwd ; whoami
-env
+echo this is https://github.com/petjal/public_service/edit/master/src/GetData.bash running...
 find -maxdepth 5 | head -n 100
 mStates="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")"
 #echo "${mStates}"
