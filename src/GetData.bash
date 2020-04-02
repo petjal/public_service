@@ -12,8 +12,12 @@ echo "${mStateData}"
 #
 mCounties="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv")"
 mCountyData="$(echo "${mCounties}" | grep "${mCounty}" | grep "${mState}")"
+mCompare1City="$(echo "${mCounties}" | grep "New York City"
+
 echo
 echo "${mCountyData}"
+ls -al ./out
+touch ./out/touched.out
 #echo
 #echo "TODO: create config file (like, to choose State, County), then read input from that."
 #echo "TODO: move this complexity to a bash script file, and then just call that as a single line script."
