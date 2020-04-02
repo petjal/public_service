@@ -39,10 +39,14 @@ jobs:
         hostname -f
         pwd
         whoami
+        echo "running https://github.com/petjal/public_service/edit/master/.github/workflows/blank.yml"
         #find | xargs ls -alrtFh 
         env | grep -i workspace
         source ./src/config.properties
         echo "${mState}"
         echo "${mCounty}"
         echo
-        source ./src/GetData.bash > ./out/output_$(date --utc +%Y%m%d_%H%M%SZ).out
+        echo "sourcing ./src/GetData.bash" 
+        source ./src/GetData.bash
+        echo "done sourceing ./src/GetData.bash"
+        echo
