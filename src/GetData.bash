@@ -12,10 +12,12 @@ echo "${mStateData}"
 #
 mCounties="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv")"
 mCountyData="$(echo "${mCounties}" | grep "${mCounty}" | grep "${mState}")"
-mCompare1City="$(echo "${mCounties}" | grep "New York City"
-
+mCompareCity1="$(echo "${mCounties}" | grep "New York City")"
 echo
 echo "${mCountyData}"
+echo
+echo "${mCompareCity1}"
+echo
 ls -al ./out
 touch ./out/touched.out
 #echo
